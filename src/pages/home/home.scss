@@ -1,0 +1,41 @@
+page-home {
+@keyframes zoom{
+	 0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(0.95,0.95);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+.slider {
+	height:45%;
+	}
+.slide {
+	height:100%;
+	top:-10px;
+	animation:zoom 10s infinite;
+	}
+.logo {
+	position:absolute;
+	height:45px;
+	top:0px;
+	z-index:20;
+	left:calc(50% - 80px);
+	box-shadow:3px 3px rgba(0,0,0,0.2);
+	}
+.scroll-content {
+    margin-top: 0 !important;
+  }
+ion-header, .toolbar-background {
+    background-color: initial !important;
+    // background-color: rgba(0,0,0,0) !important;
+    border:none !important;
+
+    &:after {
+      height: 0  !important;
+    }
+  }
+}

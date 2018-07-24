@@ -1,0 +1,83 @@
+<ion-header>
+    <img alt="logo" class="logo" src="assets/imgs/stanicLogo.png">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<!--Slider-->
+  <ion-slides class="slider" pager="true" loop="true" effect="coverflow" background-color="white"  parallax="true">
+  <ion-slide class="slide" *ngFor="let img of images">
+    <img src="assets/imgs/{{img}}"/>
+  </ion-slide>
+</ion-slides>
+<!--Naslov ispod slidera-->
+<h4 style="margin:10px; padding:none; text-align:center">
+Aktualne ponude i akcije
+</h4>
+<p style="padding-top:-10px; margin:10px; padding:none; text-align:center; text-transform:uppercase">Najbolje ponude za sve</p>
+<!--Kartice popusta-->
+<ion-grid>
+  <ion-row>
+    <ion-col>
+    <ion-card>
+  <img src="assets/imgs/katalog.png"/>
+  <ion-card-content style="text-align:center">
+  <ion-card-title style="font-size:2rem;">
+  Ovo je naslov
+  </ion-card-title>
+    <p>
+      datum trajanja
+    </p>
+  </ion-card-content>
+</ion-card>
+</ion-col>
+<ion-col style="padding:none">
+<ion-card>
+  <img src="assets/imgs/katalog.png"/>
+  <ion-card-content style="text-align:center">
+  <ion-card-title style="font-size:2rem;">
+  Ovo je naslov
+  </ion-card-title>
+    <p>
+      datum trajanja 
+    </p>
+  </ion-card-content>
+</ion-card>
+</ion-col>
+</ion-row>
+  <ion-row>
+    <ion-col >
+    <ion-card>
+  <img src="assets/imgs/katalog.png"/>
+  <ion-card-content style="text-align:center">
+  <ion-card-title style="font-size:2rem;">
+  Ovo je naslov
+  </ion-card-title>
+    <p>
+      datum trajanja
+    </p>
+  </ion-card-content>
+</ion-card>
+</ion-col>
+<ion-col>
+<ion-card>
+  <img src="assets/imgs/katalog.png"/>
+  <ion-card-content style="text-align:center">
+  <ion-card-title style="font-size:2rem;">
+  Ovo je naslov
+  </ion-card-title>
+    <p>
+      datum trajanja 
+    </p>
+  </ion-card-content>
+</ion-card>
+</ion-col>
+</ion-row>
+</ion-grid>
+
+</ion-content>
